@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import "./Contact.css";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
+import { Toaster, toast } from "react-hot-toast";
 
 const Contact = () => {
   const form = useRef();
@@ -17,7 +18,7 @@ const Contact = () => {
       "dVTE6RrzyXq0QnHxV"
     )
     .then(() => {
-      alert("Mail Sent");
+      toast.success("Form submited successfully");
       form.current.reset();
     })
     .catch((err) => {
@@ -51,7 +52,7 @@ const Contact = () => {
 
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1 }} // animate when visible
+        whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.8 }}
         viewport={{ once: true }}
       >
@@ -87,7 +88,7 @@ const Contact = () => {
       >
         <div className="contactPage">
           <div className="pic">
-            <img src="Contact.jpeg" alt="ContactPic" />
+            <img src="./Contact1.jpeg" alt="ContactPic" />
           </div>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -110,6 +111,7 @@ const Contact = () => {
               <textarea rows="5" name="message" required></textarea>
 
               <button type="submit">Submit</button>
+              <Toaster position="top-center" />
             </form>
           </div>
         </div>

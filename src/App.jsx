@@ -19,7 +19,7 @@ function App() {
       >
         <div className="container-fluid">
           <NavLink to="/" className="navbar-brand nav-link fs-4 ">
-            <img src="LOGO.png" alt="Logo" className="nav-icon"  style={{height:"50px" ,width:"60px", color:"black"}}/>
+            <img src="./LOGO.png" alt="Logo" className="nav-icon"  style={{height:"50px" ,width:"60px", color:"black"}}/>
           </NavLink>
           <button
             className="navbar-toggler"
@@ -114,7 +114,7 @@ const Home = () => {
               </h5>{" "}
               <br />
               <div className="resume">
-                <a href="SIVA Resume.pfd" download>
+                <a href="./SIVA Resume.pfd" download>
                   <button className="download-btn">
                     Download CV
                   </button>
@@ -123,7 +123,7 @@ const Home = () => {
             </div>
             <div className=" image col-12 col-md-6 d-flex justify-content-center">
               <img
-                src="SIVA.png"
+                src="./SIVA.png"
                 alt="IMAGE"
                 className="profile-img"
                 style={{ borderRadius: "40%", height: "350px", width: "250px" }}

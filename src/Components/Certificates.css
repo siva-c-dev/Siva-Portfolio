@@ -1,6 +1,6 @@
 .Certificatemain{
     padding: 50px;
-    background: url("BBg2.jpeg");
+    background: url("./CertificatesBG1.jpeg");
     width: 100%;
     height: auto;
     background-repeat: no-repeat;
@@ -9,7 +9,7 @@
     background-attachment: fixed;
 }
 .cerDet{
-  background: url("BBg4.jpeg");
+  background: url("./CertificatesBG2.jpeg");
   width: 100%;
   height: auto;
   background-repeat: no-repeat;

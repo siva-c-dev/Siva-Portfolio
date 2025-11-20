@@ -1,5 +1,5 @@
 .Skills {
-  background: url("BG3.jpg");
+  background: url("./SkillsBG1.jpg");
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,7 +8,7 @@
   padding: 0;
 }
 .DisplaySkills {
-  background: url("Backg.jpg");
+  background: url("./SkillsBG2.jpg");
   width: 100%;
   display: grid;
   grid-template-columns: auto auto;
@@ -43,7 +43,10 @@
     .DisplaySkills{
         grid-template-columns: auto;
         height: auto;
-        
+        text-align: center;
+    }
+    .DisplaySkills ul{
+      padding-left: 0;
     }
     
 }
