@@ -43,7 +43,7 @@ function App() {
               </li>
               <li className="nav-item">
                 <NavLink
-                  to="/Skills"
+                  to="/skills"
                   className="nav-link  text-dark"
                   onClick={() => setOpen(false)}
                 >
@@ -52,7 +52,7 @@ function App() {
               </li>
               <li className="nav-item">
                 <NavLink
-                  to="/Certificates"
+                  to="/certificates"
                   className="nav-link  text-dark"
                   onClick={() => setOpen(false)}
                 >
@@ -61,7 +61,7 @@ function App() {
               </li>{" "}
               <li className="nav-item">
                 <NavLink
-                  to="/About"
+                  to="/about"
                   className="nav-link  text-dark"
                   onClick={() => setOpen(false)}
                 >
@@ -70,7 +70,7 @@ function App() {
               </li>
               <li className="nav-item">
                 <NavLink
-                  to="/Contact"
+                  to="/contact"
                   className="nav-link  text-dark"
                   onClick={() => setOpen(false)}
                 >
@@ -86,10 +86,10 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Skills" element={<Skills />} />
-        <Route path="/Certificates" element={<Certificates />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Contact" element={<Contact />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/certificates" element={<Certificates />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
   );
