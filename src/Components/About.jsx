@@ -83,7 +83,7 @@ const About = () => {
           <div className="Strength">
             <h5>Strengths </h5>
             <div className="pic">
-              <img src="./Strength.jpeg" alt="Pic" style={{width:"100px" ,height:"100px",borderRadius :"50%"}} />
+              <img src="/Strength.jpeg" alt="Pic" style={{width:"100px" ,height:"100px",borderRadius :"50%"}} />
             </div>
             <p>Quick learner</p>
             <p>Strong communication</p>
@@ -92,7 +92,7 @@ const About = () => {
           <div className="Weakness">
             <h5>Weakness</h5>
             <div className="pic">
-              <img src="./Weakness.jpeg" alt="Pic" style={{width:"100px" ,height:"100px",borderRadius :"50%"}} />
+              <img src="/Weakness.jpeg" alt="Pic" style={{width:"100px" ,height:"100px",borderRadius :"50%"}} />
             </div>
             <p>Overthinking</p>
             <p>Self-Doubt</p>
@@ -101,7 +101,7 @@ const About = () => {
           <div className="Goals">
             <h5>Goals</h5>
             <div className="pic">
-              <img src="./Goal.jpeg" alt="Pic" style={{width:"100px" ,height:"100px",borderRadius :"50%"}} />
+              <img src="/Goal.jpeg" alt="Pic" style={{width:"100px" ,height:"100px",borderRadius :"50%"}} />
             </div>
             <p>Learn new technologies</p>
             <p>Improve technical skills</p>
@@ -110,7 +110,7 @@ const About = () => {
           <div className="WhatIdo">
             <h5>What I Do...</h5>
             <div className="pic">
-              <img src="./WhatIDo.jpeg" alt="Pic" style={{width:"100px" ,height:"100px",borderRadius :"50%"}} />
+              <img src="/WhatIDo.jpeg" alt="Pic" style={{width:"100px" ,height:"100px",borderRadius :"50%"}} />
             </div>
             <p>Web Development</p>
             <p>FrontEnd Design</p>

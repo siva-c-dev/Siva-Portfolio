@@ -1,5 +1,5 @@
 .Aboutme {
-    background: url("./AboutBG1.jpg");
+    background: url("/AboutBG1.jpg");
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,7 +9,7 @@
   }
   
   .Education {
-    background: url("./AboutBG1.jpg");
+    background: url("/AboutBG1.jpg");
     width: 100%;
     min-height: 100vh;
     background-repeat: no-repeat;

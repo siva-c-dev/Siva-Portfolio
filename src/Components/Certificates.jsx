@@ -7,32 +7,32 @@ const Certificates = () => {
     {
       id: 1,
       tittle: "Frontend Development",
-      img: "Certificate1.jpeg",
-      pdf: "Certificate1.pdf",
+      img: "/Certificate1.jpeg",
+      pdf: "/Certificate1.pdf",
     },
     {
       id: 2,
       tittle: "English Communication",
-      img: "Certificate11.jpeg",
-      pdf: "Certificate11.pdf",
+      img: "/Certificate11.jpeg",
+      pdf: "/Certificate11.pdf",
     },
     {
       id: 3,
       tittle: "Ai Foundation Associate",
-      img: "Certificate2.jpeg",
-      pdf: "Certificate2.pdf",
+      img: "/Certificate2.jpeg",
+      pdf: "/Certificate2.pdf",
     },
     {
       id: 4,
       tittle: "React JS",
-      img: "Certificate5.jpeg",
-      pdf: "Certificate5.pdf",
+      img: "/Certificate5.jpeg",
+      pdf: "/Certificate5.pdf",
     },
     {
       id: 5,
       tittle: "Coding & Cloud",
-      img: "Certificate4.jpeg",
-      pdf: "Certificate4.pdf",
+      img: "/Certificate4.jpeg",
+      pdf: "/Certificate4.pdf",
     },
   ];
   return (
