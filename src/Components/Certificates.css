@@ -1,0 +1,94 @@
+.Certificatemain{
+    padding: 50px;
+    background: url("BBg2.jpeg");
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.cerDet{
+  background: url("BBg4.jpeg");
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.Cerdetails{
+  padding: 70px;
+}
+
+.certificate-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+    border: 2px solid purple;
+    padding: 10px;
+    border-radius: 30px;
+  }
+
+  .certificate-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .certificate-card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .certificate-card-body {
+    padding: 20px;
+  }
+  
+  .certificate-card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .certificate-card-btn {
+    display: inline-block;
+    border: 2px solid #b90fc8;
+    background: #b50dfd;
+
+    border-radius: 25px;
+    padding: 6px 18px;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .certificate-card-btn:hover {
+    background: linear-gradient(to right ,rgb(194, 86, 245)  ,white,rgb(230, 95, 235));
+    color: rgb(0, 0, 0);
+  }
+  @media (max-width :700px) {
+    .Cerdetails{
+      padding: 30px;
+    }
+    .Cerdetails h1{
+      font-size: 35px !important;
+    }
+    .cerDet{
+      background: url("BBg3.jpeg");
+
+    }
+
+  }
+  @media (max-width :850px) {
+    .row{
+      align-items: center;
+    }
+    .row h5{
+      font-size: large !important;
+    }
+  }
+  

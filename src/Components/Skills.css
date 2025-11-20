@@ -1,0 +1,62 @@
+.Skills {
+  background: url("BG3.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 0;
+}
+.DisplaySkills {
+  background: url("Backg.jpg");
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  gap: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.DisplaySkills ul{
+  list-style-type: none;
+  font-size: large;
+}
+.DisplaySkills .Frontend,.Backend,.Database,.Tools{
+    border: 2px solid rgb(124, 1, 124);
+    border-radius: 20px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Frontend:hover,.Backend:hover,.Database:hover,.Tools:hover{
+    background:linear-gradient(to top ,rgb(232, 94, 232) ,rgb(183, 79, 227),white);
+    cursor: pointer;
+    
+}
+@media (max-width :1000px) {
+    .DisplaySkills{
+        grid-template-columns: auto;
+        height: auto;
+        
+    }
+    
+}
+@media (max-width :700px) {
+  p{
+    font-size: 25px !important;
+    font-weight: bold !important;
+  }
+  .Skills h2{
+    font-size: 35px !important;
+  }
+  .Skills{
+    padding: 10px !important;
+
+  }
+}

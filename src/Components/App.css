@@ -1,0 +1,141 @@
+.container-fluid.main {
+  width: 100%;
+  height: 100vh !important;
+  background-image: url("Background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  display: grid;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.nav-icon {
+  display: inline-block;
+  transform: scale(2.0); 
+  transform-origin: center;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+.navbar {
+  border: 3px solid rgb(140, 4, 182);
+  background: linear-gradient(to left ,rgb(242, 208, 249) ,white,rgb(227, 218, 251));
+  box-shadow: 1px 10px 10px rgb(90, 2, 105);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px;
+  text-shadow: 0px 5px 10px;
+  border-radius: 50px;
+  object-fit: contain;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.navbar-toggler {
+  background: linear-gradient(to bottom right,rgb(152, 83, 249),rgb(251, 122, 255),rgb(178, 23, 255));
+}
+.navbar-nav{
+  align-items: center;
+}
+
+.navbar-toggler::after {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  background-position: center;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.image img {
+  box-shadow: 10px 20px 10px;
+}
+
+.typing {
+  width: 0;
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+  border-right: 3px solid #fff;
+  font-size: 4rem;
+  animation: typing 4s steps(30) infinite, blink 0.7s step-end infinite;
+}
+span {
+  background: linear-gradient(to left, rgb(255, 75, 231),rgb(136, 0, 255), rgb(116, 10, 177));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.download-btn{
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out; 
+  background-color: rgb(179, 6, 247);
+  border: 3px solid purple;
+}
+.download-btn:hover{
+  background: linear-gradient(to top left , rgb(255, 75, 231),rgb(133, 84, 239), rgb(113, 12, 172));
+  color: rgb(0, 0, 0);
+  transition: opacity 0.6s ease-in-out;
+}
+.title {
+  font-size: 3rem;
+  display: inline-block;
+}
+@media (max-width: 1024px) {
+  .typing {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .typing {
+    font-size: 2rem;
+    display: inline-block;
+  }
+  .homeRow{
+  padding-top: 35px;
+  }
+  .image img{
+    height: 300px !important;
+    width: 215px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .typing {
+    font-size: 1.5rem;
+    display: inline-block;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
