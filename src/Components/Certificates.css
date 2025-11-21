@@ -1,5 +1,5 @@
 .Certificatemain{
-    padding: 50px;
+    padding: 25px;
     background-image: url("/CertificatesBG3.jpeg");
     width: 100%;
     height: auto;
@@ -72,7 +72,7 @@
   }
   @media (max-width :700px) {
     .Cerdetails{
-      padding: 30px;
+      padding: 10px !important;
     }
     .Cerdetails h1{
       font-size: 35px !important;

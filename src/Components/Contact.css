@@ -94,6 +94,7 @@ span {
   background: linear-gradient(to bottom ,white,rgb(246, 170, 246) ,white);
 }
 
+
 @media (max-width :750px) {
   .address{
     display: grid;
@@ -169,6 +170,9 @@ span {
   }
   .contact{
     height: auto;
+  }
+  .Contactdetails h2,h5{
+    font-size: 35px !important;
   }
 }
 

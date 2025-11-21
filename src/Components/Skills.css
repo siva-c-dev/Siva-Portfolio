@@ -14,7 +14,6 @@
   grid-template-columns: auto auto;
   align-items: center;
   text-align: center;
-  padding: 20px;
   gap: 20px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,6 +24,7 @@
   list-style-type: none;
   font-size: large;
 }
+
 .DisplaySkills .Frontend,.Backend,.Database,.Tools{
     border: 2px solid rgb(124, 1, 124);
     border-radius: 20px;
@@ -40,6 +40,9 @@
     cursor: pointer;
     transform: translateX(12px);
 }
+.skilldetails{
+  padding: 50px;
+}
 @media (max-width :1000px) {
     .DisplaySkills{
         grid-template-columns: auto;
@@ -51,12 +54,21 @@
     }
     
 }
-@media (max-width :700px) {
-  p{
+@media (max-width :850px) {
+  .DisplaySkills .p{
     font-size: 25px !important;
     font-weight: bold !important;
   }
   .Skills h2{
     font-size: 35px !important;
+  }
+  .Skills{
+    padding-top: 20px !important;
+  }
+  .skilldetails p{
+    font-size: 25px !important;
+  }
+  .skilldetails{
+    padding: 5px;
   }
 }

@@ -55,13 +55,6 @@
   background-position: center;
 }
 
-.details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-}
 .image img {
   box-shadow: 10px 20px 10px;
 }
@@ -79,7 +72,7 @@ span {
   background: linear-gradient(to left, rgb(255, 75, 231),rgb(136, 0, 255), rgb(116, 10, 177));
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 40px !important;
+  font-size: 50px !important;
 }
 .download-btn{
   padding: 10px;
@@ -88,6 +81,7 @@ span {
   transition: all 0.5s ease-in-out; 
   background-color: rgb(179, 6, 247);
   border: 3px solid purple;
+  color: white;
 }
 .download-btn:hover{
   background: linear-gradient(to top left , rgb(255, 75, 231),rgb(133, 84, 239), rgb(113, 12, 172));

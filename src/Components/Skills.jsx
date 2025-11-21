@@ -12,8 +12,8 @@ const Skills = () => {
           transition={{ duration: 1.5 }}
           viewport={{ once: false, amount: 0.2 }}
         >
-          <div className="Skills p-5 text-center">
-            <div className="details my-5">
+          <div className="Skills text-center">
+            <div className="skilldetails">
               <h2 style={{ fontSize: "50px" }}>
                 Welcome to explore my <span>Skills</span> Page
               </h2>{" "}

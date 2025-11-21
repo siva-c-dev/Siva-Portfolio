@@ -9,10 +9,10 @@ const About = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: false, amount: 0 }}
       >
-        <div className="About p-5 text-center">
-          <div className="details my-5">
+        <div className="About text-center">
+          <div className="details">
             <h2 style={{ fontSize: "50px" }}>
               Welcome To Know <span>About</span> Me...
             </h2>{" "}
@@ -61,15 +61,15 @@ const About = () => {
                 <h5>School </h5>
                 <p>Govt Higher Secondary School</p>
                 <p>Moolakarapatti</p>
-                <p>Year :2021 to 2022</p>
-                <p>Percentage :76%</p>
+                <p>Year: 2021 to 2022</p>
+                <p>Percentage: 76%</p>
               </div>
               <div className="College card">
                 <h5>College</h5>
                 <p>Tirunelveli Dakshina Mara Nadar Sangam College</p>
                 <p>T.kallikulam</p>
-                <p>Degree :Bsc.Information Technology</p>
-                <p>Percentage :</p>
+                <p>Degree: Bsc.Information Technology</p>
+                <p>Percentage:</p>
               </div>
             </div>
           </div>

@@ -1,165 +1,189 @@
 .Aboutme {
-    background-image: url("/AboutBG1.jpg");
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 0;
+  background-image: url("/AboutBG1.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 0;
+}
+
+.Education {
+  background-image: url("/AboutBG1.jpg");
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.Bio {
+  background: linear-gradient(to bottom, white, rgb(237, 158, 246), white);
+  width: 100%;
+  height: auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  gap: 10px;
+}
+
+.Intro {
+  padding: 40px;
+}
+
+.Education h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.Edu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(to top, rgb(189, 86, 241), white);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 600;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.Strength,
+.Weakness,
+.Goals,
+.WhatIdo {
+  border: 1px solid grey;
+  border-radius: 50px;
+  background-color: white;
+  padding: 20px;
+  width: 300px;
+}
+.container-fluid {
+  overflow: visible !important;
+  height: auto !important;
+}
+
+.Aboutme {
+  min-height: auto !important;
+  height: auto !important;
+  overflow: visible !important;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+@media (max-width :1000px) {
+  .details h2,h5{
+    font-size: 40px !important;
   }
-  
-  .Education {
-    background-image: url("/AboutBG1.jpg");
-    width: 100%;
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    text-align: center;
-    padding: 20px 0;
+}
+
+@media (max-width: 750px) {
+  .Edu {
+    grid-template-columns: 1fr 1fr;
   }
   
   .Bio {
-    background: linear-gradient(to bottom, white, rgb(237, 158, 246), white);
-    width: 100%;
-    height: auto;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 40px 20px;
-    gap: 10px;
-  }
-  
-  .Intro {
-    padding: 40px;
-  }
-  
-  .Education h3 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .Edu {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
     gap: 20px;
     padding: 20px;
-  }
-  
-  .card {
-    background: #fff;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.6s cubic-bezier(.25,.46,.45,.94);
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    background: linear-gradient(to top, rgb(189, 86, 241), white);
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .card h5 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #333;
-    font-weight: 600;
-  }
-  
-  .card p {
-    margin: 5px 0;
-    font-size: 16px;
-    color: #555;
-  }
-  
-  .Strength, .Weakness, .Goals, .WhatIdo {
-    border: 1px solid grey;
-    border-radius: 50px;
-    background-color: white;
-    padding: 20px;
-    width: 300px;
-  }
-  .container-fluid {
-    overflow: visible !important;
     height: auto !important;
+    flex-wrap: wrap;
   }
-  
-  .Aboutme {
-    min-height: auto !important;
-    height: auto !important;
-    overflow: visible !important;
+  .About {
+    padding: 10px !important;
   }
-  
-  
-  
-  @media (max-width: 750px) {
-    .Edu {
-      grid-template-columns: 1fr 1fr;
-    }
-  
-    .Bio {
-      flex-direction: column;
-      gap: 20px;
-      padding: 20px;
-      height: auto !important;
-      flex-wrap: wrap;
-    }
-    .About{
-      padding: 20px !important;
-    }
-    .Intro p{
-      font-size: 15px !important;
-    }
-    .Edu p{
-      font-size: 15px !important;
-    }
+  .Intro p {
+    font-size: 15px !important;
   }
-  
-  @media (max-width: 600px) {
+  .Edu p {
+    font-size: 15px !important;
+  }
+  .details {
+    padding: 10px !important;
+  }
+}
 
-    .Edu {
-      grid-template-columns: 1fr !important;
-    }
-  
-    .Strength,
-    .Weakness,
-    .Goals,
-    .WhatIdo {
-      width: 90%;
-      margin: 15px auto;
-      text-align: center;
-    }
-  
-    .Bio {
-      flex-direction: column;
-      padding: 20px;
-    }
-  
-    .Intro {
-      padding: 20px;
-    }
+
+@media (max-width: 600px) {
+  .Edu {
+    grid-template-columns: 1fr !important;
   }
 
-  .Strength:hover,
-  .Weakness:hover,
-  .Goals:hover,
-  .WhatIdo:hover{
-    background: linear-gradient(to top, white ,rgb(253, 207, 214) ,rgb(241, 140, 241));
-    cursor: pointer;
-    transform: translateY(-7px);
-  }
-  .Bio .Strength,
+  .Strength,
   .Weakness,
   .Goals,
-  .WhatIdo{
-    transition: transform 0.6s cubic-bezier(.25,.46,.45,.94);
+  .WhatIdo {
+    width: 90%;
+    margin: 15px auto;
+    text-align: center;
   }
 
-  
+  .Bio {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .Intro {
+    padding: 20px;
+  }
+  .details h2{
+    font-size: 30px !important;
+  }
+}
+
+.Strength:hover,
+.Weakness:hover,
+.Goals:hover,
+.WhatIdo:hover {
+  background: linear-gradient(
+    to top,
+    white,
+    rgb(253, 207, 214),
+    rgb(241, 140, 241)
+  );
+  cursor: pointer;
+  transform: translateY(-7px);
+}
+.Bio .Strength,
+.Weakness,
+.Goals,
+.WhatIdo {
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
