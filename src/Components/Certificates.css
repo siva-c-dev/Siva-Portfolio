@@ -70,11 +70,17 @@
     background: linear-gradient(to right ,rgb(194, 86, 245)  ,white,rgb(230, 95, 235));
     color: rgb(0, 0, 0);
   }
+
+  .Cerdetails h2,h3,p{
+    margin-top: 30px;
+  }
+
   @media (max-width :700px) {
     .Cerdetails{
       padding: 10px !important;
       padding-top: 30px !important;
     }
+
     .Cerdetails h1{
       font-size: 35px !important;
     }
@@ -89,7 +95,7 @@
     }
 
   }
-  @media (max-width :850px) {
+  @media (max-width :1000px) {
     .Certificatemain .row{
       align-items: center;
     }
