@@ -34,21 +34,27 @@ const Contact = () => {
       viewport={{ once: false, amount: 0.2 }}
     >
       <div className="container-fluid p-0">
-        <div className="contact p-5 text-center">
-          <div className="details my-5">
-            <h2 style={{ fontSize: "50px" }}>
-              It's <span>Siva's</span> contact info
-            </h2>{" "}
-            <br />
-            <h5 style={{ fontSize: "50px" }}>
-              Feel free to reach out, I’m always open to new opportunities.
-            </h5>{" "}
-            <br />
-            <p>Ideas become powerful when shared. Let’s talk.</p>
-            <p>Get in Touch</p>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: false, amount: 0.2 }}
+        >
+          <div className="contact p-5 text-center">
+            <div className="details my-5">
+              <h2 style={{ fontSize: "50px" }}>
+                It's <span>Siva's</span> contact info
+              </h2>{" "}
+              <br />
+              <h5 style={{ fontSize: "50px" }}>
+                Feel free to reach out, I’m always open to new opportunities.
+              </h5>{" "}
+              <br />
+              <p>Ideas become powerful when shared. Let’s talk.</p>
+              <p>Get in Touch</p>
+            </div>
           </div>
-        </div>
-
+        </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
