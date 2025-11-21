@@ -7,7 +7,7 @@ const About = () => {
     <div className="container-fluid Aboutme">
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
         viewport={{ once: false, amount: 0.2 }}
       >
