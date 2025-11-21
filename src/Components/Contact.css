@@ -112,7 +112,7 @@ span {
   .contact{
     padding: 15px !important;
   }
-  .details{
+  .Contactdetails{
     padding: 20px !important;
   }
 }
@@ -130,10 +130,10 @@ span {
     padding-top: 30px;  
     
   }
-  .contact h2,h5{
+  .Contactdetails h2,h5{
     font-size: 30px !important;
   }
-  .contact p{
+  .Contactdetails p{
     font-size: 20px !important;
   }
 }

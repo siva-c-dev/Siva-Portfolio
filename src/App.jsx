@@ -126,7 +126,7 @@ const Home = () => {
       >
         <div className="container-fluid main text-center">
           <div className="row homeRow align-items-center justify-content-center text-center flex-direction-column">
-            <div className="col-12 col-md-6 mb-4 mb-md-0">
+            <div className="col-12 col-md-6 mb-4 mb-md-0 namedetail">
               <h1>
                 Hello I'm <span className="name">Siva</span>
               </h1>

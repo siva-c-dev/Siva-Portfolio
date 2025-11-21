@@ -41,7 +41,7 @@ const Contact = () => {
           viewport={{ once: false, amount: 0.2 }}
         >
           <div className="contact p-5 text-center">
-            <div className="details my-5">
+            <div className="Contactdetails my-5">
               <h2 style={{ fontSize: "50px" }}>
                 It's <span>Siva's</span> contact info
               </h2>{" "}

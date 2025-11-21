@@ -89,10 +89,10 @@
 
   }
   @media (max-width :850px) {
-    .row{
+    .Certificatemain .row{
       align-items: center;
     }
-    .row h5{
+    .Certificatemain .row h5{
       font-size: large !important;
     }
   }
