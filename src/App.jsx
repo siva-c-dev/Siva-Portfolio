@@ -97,6 +97,25 @@ function App() {
   );
 }
 const Home = () => {
+  const words = [
+    "I am a Developer",
+    "MERN Stack Developer",
+    "UI/UX Designer",
+    "Frontend Developer"
+  ];
+  
+  const [index, setIndex] = useState(0);
+  const [typingText, setTypingText] = useState(words[0]);
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % words.length);
+      setTypingText(words[(index + 1) % words.length]);
+    }, 4000);
+  
+    return () => clearInterval(interval);
+  }, [index]);
+  
   return (
     <>
       <motion.div
@@ -111,7 +130,7 @@ const Home = () => {
               <h1>
                 Hello I'm <span className="name">Siva</span>
               </h1>
-              <h3 className="typing">I am a Developer</h3>
+              <h5 className="typing">{typingText}</h5>
               <h5>
                 I build beautiful, fast, and modern web applications.
               </h5>{" "}

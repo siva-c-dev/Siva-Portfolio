@@ -75,6 +75,7 @@ span {
   background: linear-gradient(to left, rgb(255, 75, 231),rgb(136, 0, 255), rgb(116, 10, 177));
   -webkit-background-clip: text;
   color: transparent;
+  font-size: 40px !important;
 }
 .download-btn{
   padding: 10px;
@@ -121,6 +122,9 @@ span {
   .image img{
     height: 300px !important;
     width: 215px !important;
+  }
+  span{
+    font-size: 33px !important;
   }
 }
 
