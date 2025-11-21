@@ -136,7 +136,7 @@ const Home = () => {
               </h5>{" "}
               <br />
               <div className="resume">
-                <a href="./SIVA Resume.pfd" download>
+                <a href="/SIVA-Resume.pdf" download>
                   <button className="download-btn">Download CV <i class="bi bi-download"></i></button>
                 </a>
               </div>
