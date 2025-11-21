@@ -1,6 +1,6 @@
 .Certificatemain{
     padding: 50px;
-    background-image: url("/CertificatesBG1.jpeg");
+    background-image: url("/CertificatesBG3.jpeg");
     width: 100%;
     height: auto;
     background-repeat: no-repeat;
@@ -78,8 +78,13 @@
       font-size: 35px !important;
     }
     .cerDet{
-      background: url("BBg3.jpeg");
-
+      background-image:url("/CertificatesBG1.jpeg");
+      width: 100%;
+      height: auto;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
     }
 
   }

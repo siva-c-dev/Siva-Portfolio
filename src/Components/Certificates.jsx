@@ -37,12 +37,13 @@ const Certificates = () => {
   ];
   return (
     <>
-      <div className="cerDet text-center">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 3 }}
-        >
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        viewport={{ once: false, amount: 0.2 }}
+      >
+        <div className="cerDet text-center">
           <div className="Cerdetails">
             <h1 style={{ padding: "20px" }}>
               Here is my section to view my <span>certificates</span>
@@ -57,44 +58,48 @@ const Certificates = () => {
             </h3>
             <p>My Certifications & Achievements</p>
           </div>
-        </motion.div>
-      </div>
+        </div>
 
-      <div className="container-fluid Certificatemain">
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 3 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: false, amount: 0.2 }}
         >
-          <div className="row g-4">
-            {certificates.map((item, index) => (
-              <div className="  col-12 col-sm-6 col-md-4 col-lg-3" key={index}>
-                <div className="Box certificate-card h-100 shadow-sm ">
-                  <img
-                    src={item.img}
-                    className="certificate-card-img"
-                    alt={item.tittle}
-                  />
+          <div className="container-fluid Certificatemain">
+            <div className="row g-4">
+              {certificates.map((item, index) => (
+                <div
+                  className="  col-12 col-sm-6 col-md-4 col-lg-3"
+                  key={index}
+                >
+                  <div className="Box certificate-card h-100 shadow-sm ">
+                    <img
+                      src={item.img}
+                      className="certificate-card-img"
+                      alt={item.tittle}
+                    />
 
-                  <div className="certificate-card-body text-center">
-                    <h5 className="certificate-card-title mb-3">
-                      {item.tittle}
-                    </h5>
+                    <div className="certificate-card-body text-center">
+                      <h5 className="certificate-card-title mb-3">
+                        {item.tittle}
+                      </h5>
 
-                    <a
-                      href={item.pdf}
-                      target="_blank"
-                      className="certificate-card-btn"
-                    >
-                      View PDF
-                    </a>
+                      <a
+                        href={item.pdf}
+                        target="_blank"
+                        className="certificate-card-btn"
+                      >
+                        View PDF
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </motion.div>
-      </div>
+      </motion.div>
     </>
   );
 };

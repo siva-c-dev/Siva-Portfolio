@@ -12,76 +12,85 @@ function App() {
   return (
     <>
       {/* Navbar */}
-
-      <div
-        className="navbar navbar-expand-lg navbar-light "
-        style={{ backgroundColor: "#ffff" }}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        viewport={{ once: false, amount: 0.2 }}
       >
-        <div className="container-fluid">
-          <NavLink to="/" className="navbar-brand nav-link fs-4 ">
-            <img src="./LOGO.png" alt="Logo" className="nav-icon"  style={{height:"50px" ,width:"60px", color:"black"}}/>
-          </NavLink>
-          <button
-            className="navbar-toggler"
-            type="button"
-            onClick={() => setOpen(!open)}
-          >
-          </button>
-          <div
-            className={`collapse navbar-collapse ${open ? "show" : ""}`}
-            id="navbarNav"
-          >
-            <ul className="navbar-nav ms-auto gap-3">
-              <li className="nav-item">
-                <NavLink
-                  to="/"
-                  className="nav-link text-dark"
-                  onClick={() => setOpen(false)}
-                >
-                  Home
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  to="/skills"
-                  className="nav-link  text-dark"
-                  onClick={() => setOpen(false)}
-                >
-                  Skills
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  to="/certificates"
-                  className="nav-link  text-dark"
-                  onClick={() => setOpen(false)}
-                >
-                  Certificates
-                </NavLink>
-              </li>{" "}
-              <li className="nav-item">
-                <NavLink
-                  to="/about"
-                  className="nav-link  text-dark"
-                  onClick={() => setOpen(false)}
-                >
-                  About
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  to="/contact"
-                  className="nav-link  text-dark"
-                  onClick={() => setOpen(false)}
-                >
-                  Contact
-                </NavLink>
-              </li>
-            </ul>
+        <div
+          className="navbar navbar-expand-lg navbar-light "
+          style={{ backgroundColor: "#ffff" }}
+        >
+          <div className="container-fluid">
+            <NavLink to="/" className="navbar-brand nav-link fs-4 ">
+              <img
+                src="./LOGO.png"
+                alt="Logo"
+                className="nav-icon"
+                style={{ height: "50px", width: "60px", color: "black" }}
+              />
+            </NavLink>
+            <button
+              className="navbar-toggler"
+              type="button"
+              onClick={() => setOpen(!open)}
+            ></button>
+            <div
+              className={`collapse navbar-collapse ${open ? "show" : ""}`}
+              id="navbarNav"
+            >
+              <ul className="navbar-nav ms-auto gap-3">
+                <li className="nav-item">
+                  <NavLink
+                    to="/"
+                    className="nav-link text-dark"
+                    onClick={() => setOpen(false)}
+                  >
+                    Home
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink
+                    to="/skills"
+                    className="nav-link  text-dark"
+                    onClick={() => setOpen(false)}
+                  >
+                    Skills
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink
+                    to="/certificates"
+                    className="nav-link  text-dark"
+                    onClick={() => setOpen(false)}
+                  >
+                    Certificates
+                  </NavLink>
+                </li>{" "}
+                <li className="nav-item">
+                  <NavLink
+                    to="/about"
+                    className="nav-link  text-dark"
+                    onClick={() => setOpen(false)}
+                  >
+                    About
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink
+                    to="/contact"
+                    className="nav-link  text-dark"
+                    onClick={() => setOpen(false)}
+                  >
+                    Contact
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-
+      </motion.div>
       {/* Routes */}
 
       <Routes>
@@ -99,8 +108,9 @@ const Home = () => {
     <>
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 3 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        viewport={{ once: false, amount: 0.2 }}
       >
         <div className="container-fluid main text-center">
           <div className="row homeRow align-items-center justify-content-center text-center flex-direction-column">
@@ -115,13 +125,11 @@ const Home = () => {
               <br />
               <div className="resume">
                 <a href="./SIVA Resume.pfd" download>
-                  <button className="download-btn">
-                    Download CV
-                  </button>
+                  <button className="download-btn">Download CV</button>
                 </a>
               </div>
             </div>
-            <div className=" image col-12 col-md-6 d-flex justify-content-center">
+            <div className="image col-12 col-md-6 d-flex justify-content-center">
               <img
                 src="./SIVA.png"
                 alt="IMAGE"
@@ -144,7 +152,7 @@ export function ScrollToTop() {
   }, [pathname]);
 
   return null;
-};
+}
 
 export default App;
 export { Home };

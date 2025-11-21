@@ -8,8 +8,9 @@ const Skills = () => {
       <div className="container-fluid Skills">
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 3 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: false, amount: 0.2 }}
         >
           <div className="Skills p-5 text-center">
             <div className="details my-5">
@@ -32,11 +33,12 @@ const Skills = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 3 }}
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.2 }}
         >
-          <div className="DisplaySkills">
+          <div className="DisplaySkills container-fluid">
             <div className="Frontend">
               <p
                 style={{

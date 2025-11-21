@@ -55,7 +55,7 @@
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: 0.3s ease;
+    transition: transform 0.6s cubic-bezier(.25,.46,.45,.94);
   }
   
   .card:hover {
@@ -147,12 +147,20 @@
       padding: 20px;
     }
   }
+
   .Strength:hover,
   .Weakness:hover,
   .Goals:hover,
   .WhatIdo:hover{
     background: linear-gradient(to top, white ,rgb(253, 207, 214) ,rgb(241, 140, 241));
     cursor: pointer;
+    transform: translateY(-7px);
+  }
+  .Bio .Strength,
+  .Weakness,
+  .Goals,
+  .WhatIdo{
+    transition: transform 0.6s cubic-bezier(.25,.46,.45,.94);
   }
 
   
