@@ -99,6 +99,7 @@ span {
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
+    gap: 85px;
   }
   .address div:nth-child(3) {
     grid-column: span 2;   
