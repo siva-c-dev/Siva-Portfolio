@@ -4,13 +4,13 @@ import "./About.css";
 
 const About = () => {
   return (
-    <div className="container-fluid Aboutme">
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1.5 }}
-        viewport={{ once: false, amount: 0.2 }}
-      >
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+      viewport={{ once: false, amount: 0.2 }}
+    >
+      <div className="container-fluid Aboutme">
         <div className="About p-5 text-center">
           <div className="details my-5">
             <h2 style={{ fontSize: "50px" }}>
@@ -152,8 +152,8 @@ const About = () => {
             </div>
           </div>
         </motion.div>
-      </motion.div>
-    </div>
+      </div>
+    </motion.div>
   );
 };
 
