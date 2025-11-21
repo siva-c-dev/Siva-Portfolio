@@ -45,14 +45,14 @@ const Certificates = () => {
       >
         <div className="cerDet text-center">
           <div className="Cerdetails">
-            <h1 style={{ padding: "20px" }}>
+            <h1>
               Here is my section to view my <span>certificates</span>
             </h1>
-            <h2 style={{ padding: "20px" }}>
+            <h2>
               Proof of my commitment to staying updated with modern development
               practices
             </h2>
-            <h3 style={{ padding: "20px" }}>
+            <h3>
               Demonstrates my commitment toward continuous improvement and
               professional growth
             </h3>

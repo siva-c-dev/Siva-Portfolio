@@ -38,7 +38,7 @@ const Skills = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.2 }}
         >
-          <div className="DisplaySkills container-fluid">
+          <div className="DisplaySkills container-fluid py-3">
             <div className="Frontend">
               <p
                 style={{

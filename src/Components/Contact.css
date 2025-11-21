@@ -52,6 +52,7 @@ span {
   transition: all 0.5s ease-in-out; 
   background-color: rgb(179, 6, 247);
   border: 3px solid purple;
+  color: white;
 }
 
 .contact-form button:hover{
