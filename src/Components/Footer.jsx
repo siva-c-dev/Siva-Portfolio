@@ -53,14 +53,14 @@ function Footer() {
           <NavLink to="/" className="nav-link">
             <i className="bi bi-house-door"></i> Home
           </NavLink>
-          <NavLink to="/About" className="nav-link">
-            <i className="bi bi-file-earmark-person"></i> About
+          <NavLink to="/Skills" className="nav-link">
+            <i className="bi bi-stack-overflow"></i> Skills
           </NavLink>
           <NavLink to="/Certificates" className="nav-link">
             <i className="bi bi-file-earmark-pdf"></i> Cerificates
           </NavLink>
-          <NavLink to="/Skills" className="nav-link">
-            <i className="bi bi-stack-overflow"></i> Skills
+          <NavLink to="/About" className="nav-link">
+            <i className="bi bi-file-earmark-person"></i> About
           </NavLink>
           <NavLink to="/Contact" className="nav-link">
             <i className="bi bi-telephone-forward"></i> Contact
