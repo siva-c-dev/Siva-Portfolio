@@ -66,13 +66,28 @@ const Contact = () => {
               <h4>
                 <i className="bi bi-telephone-outbound"></i> Mobile No{" "}
               </h4>
-              <h6>+91 9342329218</h6>
+              <a
+                href="tel:+919342329218"
+                style={{ color: "black", textDecoration: "none" }}
+              >
+                <h6>+91 9342329218</h6>
+              </a>
             </div>
             <div className="email">
               <h4>
                 <i className="bi bi-envelope-open-heart"></i> Email ID{" "}
               </h4>
-              <h6> sivagreenheart@gmail.com</h6>
+              <h6>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&to=sivagreenheart@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "black", textDecoration: "none" }}
+                >
+                  {" "}
+                  sivagreenheart@gmail.com
+                </a>
+              </h6>
             </div>
             <div className="findMe">
               <h4>
