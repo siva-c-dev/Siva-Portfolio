@@ -52,7 +52,7 @@ const Certificates = () => {
         <div className="cerDet text-center">
           <div className="Cerdetails">
             <h1>
-              Here is my section to view my <span>certificates</span>
+              Here is my section to view my <span>Certificates</span>
             </h1>
             <h2>
               Proof of my commitment to staying updated with modern development

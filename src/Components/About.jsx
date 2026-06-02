@@ -68,8 +68,9 @@ const About = () => {
                 <h5>College</h5>
                 <p>Tirunelveli Dakshina Mara Nadar Sangam College</p>
                 <p>T.kallikulam</p>
-                <p>Degree: Bsc.Information Technology</p>
-                <p>Percentage:</p>
+                <p>Degree: B.Sc.Information Technology</p>
+                <p>Year Of Passed Out: 2025</p>
+                <p>Percentage: 77%</p>
               </div>
             </div>
           </div>
@@ -147,8 +148,8 @@ const About = () => {
                 />
               </div>
               <p>Web Development</p>
-              <p>FrontEnd Design</p>
-              <p>UI/UX Design</p>
+              <p>FrontEnd Designing</p>
+              <p>UI/UX Designing</p>
             </div>
           </div>
         </motion.div>

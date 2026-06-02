@@ -70,7 +70,7 @@ function Footer() {
         <div className="footer-section">
           <h4>Address</h4>
           <p>103/A, Middle Street</p>
-          <p>Tirunelveli Near New Bus Stand</p>
+          <p>Tirunelveli ,Nanguneri</p>
           <p>Pin Code: 627108</p>
         </div>
       </div>
