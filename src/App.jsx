@@ -143,7 +143,7 @@ const Home = () => {
             </div>
             <div className="image col-12 col-md-6 d-flex justify-content-center">
               <img
-                src="./SIVA.jpeg"
+                src="./SIVA PIC.jpeg"
                 alt="IMAGE"
                 className="profile-img"
                 style={{ borderRadius: "40%", height: "350px", width: "250px" }}
